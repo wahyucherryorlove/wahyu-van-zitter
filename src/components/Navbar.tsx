@@ -1,13 +1,20 @@
 "use client";
 
 import Link from "next/link";
+import { useEffect } from "react";
 import { usePathname } from "next/navigation";
 
-const Navbar = () => {
+const Navbar = ({ scrollY }: { scrollY: number }) => {
   const pathname = usePathname();
 
   return (
-    <nav className="bg-[#222222] flex justify-center h-24">
+    <nav
+      className={`flex justify-center fixed top-0 z-[9999] inset-x-0 shadow-lg duration-300 ${
+        scrollY < 80
+          ? "h-24 bg-[#222222]"
+          : "h-20 backdrop-blur-lg bg-[#222222]/80"
+      }`}
+    >
       <div className="flex justify-between w-4/5 h-full items-center">
         <h2 className="text-orange-400 font-semibold text-xl">WAHYUDI UMAR</h2>
 

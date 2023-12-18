@@ -2,20 +2,20 @@ import Link from "next/link";
 
 const Jumbotron = () => {
   return (
-    <section className="relative bg-neutral-400 h-[550px]">
+    <section className="relative bg-neutral-400 h-[550px] xl:mt-[6rem]">
       <div
         className="h-full flex flex-col items-center justify-center bg-contain"
         style={{ backgroundImage: "url('/images/home/jumbotron.png')" }}
       >
-        <div className="absolute inset-0 bg-neutral-900/50" />
+        <div className="absolute inset-0 bg-neutral-900/60" />
 
         <div className="absolute flex items-center flex-col justify-center xl:gap-y-6 h-full">
-          <h1 className="lg:text-4xl font-bold flex flex-col gap-y-3 text-center text-neutral-50">
-            HI, I'M WAHYUDI UMAR{" "}
+          <h1 className="lg:text-5xl font-bold flex flex-col gap-y-3 text-center text-neutral-50">
+            HI, I'M WAHYUDI UMAR
             <span className="text-[#FF8B00]">I'M A FRONTEND DEVELOPER</span>
           </h1>
 
-          <p className="xl:w-1/2 text-center text-base text-neutral-50">
+          <p className="xl:w-1/2 text-center text-lg text-neutral-50">
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad, autem
             possimus. Aliquid pariatur quod iure odio consectetur accusantium
             neque explicabo!
