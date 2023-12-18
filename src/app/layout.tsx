@@ -6,6 +6,7 @@ import "../styles/globals.css";
 
 import { useEffect, useState } from "react";
 
+import { Footer } from "@components/Footer";
 import { Navbar } from "@components/Navbar";
 
 const poppins = Poppins({
@@ -43,17 +44,14 @@ export default function RootLayout({
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
-
-    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   return (
     <html lang="en">
-      <body
-        className={`${karla.className} ${poppins.className} bg-[#222222] mb-[200rem]`}
-      >
+      <body className={`${karla.className} ${poppins.className} bg-[#222222]`}>
         <Navbar scrollY={scrollY} />
         {children}
+        <Footer />
       </body>
     </html>
   );
