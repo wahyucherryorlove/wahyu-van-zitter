@@ -11,8 +11,10 @@ const Jumbotron = () => {
 
         <div className="absolute flex items-center flex-col justify-center xl:gap-y-6 h-full">
           <h1 className="lg:text-5xl font-bold flex flex-col gap-y-3 text-center text-neutral-50">
-            HI, I'M WAHYUDI UMAR
-            <span className="text-[#FF8B00]">I'M A FRONTEND DEVELOPER</span>
+            HI, I&apos;M WAHYUDI UMAR
+            <span className="text-[#FF8B00]">
+              I&apos;M A FRONTEND DEVELOPER
+            </span>
           </h1>
 
           <p className="xl:w-1/2 text-center text-lg text-neutral-50">
