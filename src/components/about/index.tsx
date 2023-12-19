@@ -27,7 +27,7 @@ const About = () => {
           </p>
 
           <Link
-            href="#"
+            href=""
             className="bg-[#FF8B00] text-neutral-50 px-6 py-2.5 hover:bg-[#ff9e27] text-sm font-bold rounded-md inline-block xl:mt-6 duration-200"
           >
             Download Resume
