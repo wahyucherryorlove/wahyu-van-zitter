@@ -68,6 +68,8 @@ export default function RootLayout({
                   ? "Blogger me"
                   : router === "/contact" && "Contact me"}
         </title>
+
+        <link rel="shortcut icon" href="/logo.jpg" type="image/x-icon" />
       </head>
 
       <body className={`${karla.className} ${poppins.className} bg-[#222222]`}>
